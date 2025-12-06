@@ -59,11 +59,16 @@
 			</plugin>
 		</plugins>
 	</build>
-<distributionManagement>
-    <repository>
-        <id>nexus</id>
-        <url>http://192.168.49.2:32001/repository/maven-releases/</url>
-    </repository>
-</distributionManagement>
+ <distributionManagement>
+      <repository>
+          <id>nexus</id>
+          <url>http://192.168.49.2:32001/repository/maven-releases/</url>
+      </repository>
+      <snapshotRepository>
+          <id>nexus-snapshots</id>
+          <url>http://192.168.49.2:32001/repository/maven-snapshots/</url>
+      </snapshotRepository>
+  </distributionManagement>
+
 
 </project>
